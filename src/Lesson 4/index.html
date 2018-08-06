@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Отправка заявки на конференцию</title>
+		<meta charset="utf-8">
+		<link href="./css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+		<h1>Отправка заявки на конференцию</h1>
+		
+		<h2>Основные данные</h2>
+
+		<h3>* Фамилия, имя, отчество:</h3>
+		<form method="post">
+			<p><input type="text" name="" size="50"></p>
+			<h3>Дата рождения:</h3>
+			<p><input type="text" name="" value="дд.мм.гггг"></p>
+			<h3>Пол:</h3>
+			<input id="sexmale" type="radio" name="sex">&nbsp;<label for="sexmale">мужской</label>
+			<input id="sexfemale" type="radio" name="sex">&nbsp;<label for="sexfemale">женский</label>
+			
+			<h2>Данные для создания личного кабинета</h2>
+
+			<h3>* Адрес электронной почты:</h3>
+			<p><input type="email" name="" size="50"></p>
+			<h3>* Пароль для создания личного кабинета:</h3>
+			<p><input type="password" name="" size="50"></p>
+			<h3>* Подтверждение пароля:</h3>
+			<p><input type="password" name="" size="50"></p>
+			
+			<h2>Материалы для конференции</h2>
+
+			<h3>* Тема доклада:</h3>
+			<p><input type="text" name="" size="50"></p>
+			<h3>* Тезисы доклада (не более 1000 символов):</h3>
+			<p><textarea cols="50" rows="10"> </textarea></p>
+			<h3>Файл презентации:</h3>
+			<p><input type="file" name=""></p>
+
+			<h2>Дополнительные опции</h2>
+
+			<p><input id="hotel" type="checkbox" name=""> <label for="hotel">Проживание в отеле</label></p> <br>
+			<p><input id="breakfast" type="checkbox" name="" checked="checked"> <label for="breakfast">Завтрак</label></p> <br>
+			<p><input id="dinner" type="checkbox" name=""> <label for="dinner">Обед</label></p> <br>
+			<p><input id="supper" type="checkbox" name=""> <label for="supper">Ужин</label></p> <br>
+
+			<hr>
+			<button>Отправить</button>
+			<hr>
+			<p>* Поля, отмеченные звездочкой, являются обязательными для заполнения</p>
+		</form>
+	</body>
+</html>
