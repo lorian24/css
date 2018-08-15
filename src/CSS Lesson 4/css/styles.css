@@ -59,7 +59,7 @@ h2 {
 }
 
 #temperature {
-	position: relative;
+	position: absolute;
 	top: 52px;
 	left: 560px;
 	color: grey;
