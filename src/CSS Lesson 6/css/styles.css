@@ -57,8 +57,9 @@ header {
 
 .fixed-container {
 	width: 960px;
-	margin: 0 auto;
+	margin: 0 auto 20px;
 	position: relative;
+	
 }
 
 #datetime {
@@ -353,7 +354,26 @@ li{
 		left: 135px;
 	}
 
+.currency {
+	margin: 0 0 20px 18px;
+	font-size: 14px;
+	position: relative;
+	padding-left: 18px;
+}
+	table {
+		width: 213px;
+		text-align: center;
+	}
+	table, th, td {
+		border: 1px solid #e5e5e5;
+	}
 
+	th, td {
+		padding: 15px;
+	}
+	#title {
+		font-size: 20px;
+	}
 #special-news{
 	height: 393px;
 	padding-bottom: 60px;
@@ -427,6 +447,7 @@ li{
 footer{
 	background-color: #00122f;
 	height: 318px;
+	margin-top: -20px;
 }
 
 	.footer-nav a{
@@ -501,7 +522,7 @@ footer{
 #central-container {
 	padding-top: 20px;
 	background-color: #f9f9f9;
-	background-image: url('img/central-bg-top.png');
+	background-image: url('../img/central-bg-top.png');
 	background-repeat: repeat-x;
 }
 

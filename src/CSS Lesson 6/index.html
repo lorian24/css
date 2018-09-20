@@ -5,6 +5,8 @@
 	<title>Новостное агентство</title>
 	<link rel="stylesheet" type="text/css" href="./css/reset.css">
 	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="script.js"></script>
 </head>
 <body>
 	<div id="black-bar">
@@ -112,17 +114,20 @@
 						<div class="news-comments-count">15</div>
 					</div>
 				</div>
-				<div class="news-item">
-					<div class="news-item-text">
-						В Москве назвали самое популярное мороженое у болельщиков ЧМ-2018
-					</div>
-					<div class="news-item-props">
-						<a href="#">/ЧМ по футболу</a>
-						<div class="news-time">10:48</div>
-						<div class="news-comments-count">15</div>
-					</div>
-				</div>
 				<button>Все новости</button>
+				<table class="currency">
+					<tr>
+						<td id="title" colspan="2">Курс валют</td>
+					</tr>
+					<tr>
+						<td>USD</td>
+						<td class="usd"></td>
+					</tr>
+					<tr>
+						<td>EUR</td>
+						<td class="eur">...</td>
+					</tr>
+				</table>
 			</div>
 
 			<div id="column-center">
