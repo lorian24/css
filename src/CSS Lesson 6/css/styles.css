@@ -1,8 +1,8 @@
 html, body {
 	margin: 0;
 	padding: 0;
-	min-width: 1000px;
 	font-family: Arial;
+	min-width: 320px;
 }
 
 h1{
@@ -56,7 +56,8 @@ header {
 }
 
 .fixed-container {
-	width: 960px;
+	max-width: 1000px;
+	padding: 0 20px;
 	margin: 0 auto 20px;
 	position: relative;
 	
@@ -64,6 +65,15 @@ header {
 
 #datetime {
 	float: right;
+}
+/****************** FLEX *******************/
+
+.flex-container {
+	display: flex;
+	justify-content: center;
+	background-color: #f9f9f9;
+	background-image: url('../img/central-bg-top.png');
+	background-repeat: repeat-x;
 }
 
 /***************** HEADER******************/
@@ -144,19 +154,18 @@ li{
 	padding-right: 10px;
 }
 #menu a {
-	text-decoration: none;	
+	text-decoration: none;
 	color: black;
 }
 .slash {
-	color: grey; 
+	color: grey;
 }
 
 
 /***********************MAIN**************************/
 #column-left {
 	background-color: #FFFFFF;
-	width: 250px;
-	float: left;
+	width: 270px;
 }
 
 	.news-item {
@@ -188,7 +197,7 @@ li{
 		}
 
 		#column-left .news-time {
-			left: 120px;			
+			left: 120px;
 		}
 
 		.news-comments-count {
@@ -217,9 +226,7 @@ li{
 
 #column-center {
 	background-color: #f9f9f9;
-	width: 420px;
-	margin-left: 20px;
-	float: left;
+	margin: 0 20px;
 	position: relative;
 }
 	
@@ -271,8 +278,8 @@ li{
 		}
 
 		#second-news .news-item-props{
-			position: absolute;			
-		}	
+			position: absolute;
+		}
 
 		#second-news .news-time{
 			left: 73px;
@@ -294,8 +301,8 @@ li{
 		height: 142px;
 	}
 	#third-news .news-item-props{
-		position: absolute;			
-	}	
+		position: absolute;
+	}
 
 	#third-news .news-time{
 		left: 73px;
@@ -320,8 +327,8 @@ li{
 		height: 142px;
 	}
 	#fourth-news .news-item-props{
-		position: absolute;			
-	}	
+		position: absolute;
+	}
 
 	#fourth-news .news-time{
 		left: 73px;
@@ -343,8 +350,8 @@ li{
 		height: 142px;
 	}
 	#fifth-news .news-item-props{
-		position: absolute;			
-	}	
+		position: absolute;
+	}
 
 	#fifth-news .news-time{
 		left: 73px;
@@ -361,7 +368,7 @@ li{
 	padding-left: 18px;
 }
 	table {
-		width: 213px;
+		width: 233px;
 		text-align: center;
 	}
 	table, th, td {
@@ -370,6 +377,7 @@ li{
 
 	th, td {
 		padding: 15px;
+		width: 116px;
 	}
 	#title {
 		font-size: 20px;
@@ -384,14 +392,14 @@ li{
 	height: 393px;
 	width: 568px;
 	
-}	
+}
 
 	#bottom-news a{
 		color: white;
 		position: absolute;
 		top: 109px;
 		font-size: 12px;
-		left: 20px;
+		padding-left: 20px;
 	}
 
 	#bottom-news h1{
@@ -399,6 +407,7 @@ li{
 		top: 145px;
 		left: 20px;
 		width: 400px;
+		padding-left: 20px;
 	}
 
 	#bottom-news .data{
@@ -406,7 +415,7 @@ li{
 		top: 260px;
 		font-size: 12px;
 		color: white;
-		left: 20px;
+		padding-left: 20px;
 	}
 
 	#bottom-news p{
@@ -414,26 +423,26 @@ li{
 		top: 300px;
 		font-size: 12px;
 		color: white;
-		left: 20px;
+		padding-left: 20px;
 		width: 483px;
 		line-height: 20px;
 	}
 
 	#bottom-news .news-time{
-
-		left: 115px;
+		left: 135px;
 		top: 260px;
 		font-size: 12px;
 		color: white;
 		background-image: url('../img/icon-white-time.png');
-		background-size:11px;		
+		background-size:11px;
 	}
 
 #readable-news{
 	float: left;
-	width: 392px;
+	width: 412px;
 	height: 393px;
 	background: white;
+	margin-left: 20px;
 }
 	
 	#readable-news .news-time{
@@ -480,7 +489,7 @@ footer{
 		grid-template-rows: repeat(3,20px);
 		padding-top: 22px;
 
-	}	
+	}
 
 	#contacts img{
 		margin-right: 18px;
@@ -521,9 +530,6 @@ footer{
 
 #central-container {
 	padding-top: 20px;
-	background-color: #f9f9f9;
-	background-image: url('../img/central-bg-top.png');
-	background-repeat: repeat-x;
 }
 
 #central-container .fixed-container {
@@ -531,8 +537,7 @@ footer{
 }
 
 #column-right {
-	width: 250px;
-	float: right;
+	width: 270px;
 }
 
 #column-right img {
